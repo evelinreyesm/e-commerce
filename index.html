@@ -3,9 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>e-commerce</title>
+    <style>
+        body{
+            margin: o;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-areas: 
+            "header header"
+            "menu main"
+            "footer footer";
+            gap: 10px;
+
+        }
+        header{
+            grid-area: header;
+            background-color: navy;
+            text-align: center;
+            padding: 10px;
+            color: white;
+            font-size: 30px;
+        }
+        menu{
+            grid-area: menu;
+            background-color: white;
+            text-align: center;
+            align-items: center;
+            color: black;
+        }
+        main{
+            grid-area: main;
+            background-color: white;
+            gap: 10px;
+            
+        }
+        footer{
+            grid-area: footer;
+            text-align: center;
+            
+        }
+        .barra{
+            display: flex;
+            flex-direction: column;
+        }
+        .contp{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .but{
+            background-color: navy;
+            color: white;
+            
+        }
+        p{
+            
+            text-align: center;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+           
+        }
+  
+
+    </style>
 </head>
 <body>
-    
+  <div class="grid-container">
+    <header>Mi Ecommerce</header>
+
+    <menu>Categorias
+        <div class="barra"> 
+            <p>perfume (54)</p>
+            <p>zapatos (106)</p>
+            <p>ropa (1000)</p>
+        </div>
+    </menu>
+    <main>
+        <div class="contp">
+            <div class="card">
+                <img src="image/descarga.jfif" alt="">
+                <p>perfume</p>
+                <p>31990</p>
+                <button class="but">comprar</button>
+
+            </div>
+            <div class="card">
+                <img src="image/descarga.jfif" alt="">
+                <p>perfume</p>
+                <p>31990</p>
+                <button class="but">comprar</button>
+            </div>
+            <div class="card">
+                <img src="image/descarga.jfif" alt="">
+                <p>perfume</p>
+                <p>31990</p>
+                <button class="but">comprar</button>
+            </div>
+             <div class="card">
+                <img src="image/descarga.jfif" alt="">
+                <p>perfume</p>
+                <p>31990</p>
+                <button class="but">comprar</button>
+            </div>
+            <div class="card">
+                <img src="image/descarga.jfif" alt="">
+                <p>perfume</p>
+                <p>31990</p>
+                <button class="but">comprar</button>
+            </div>
+            <div class="card">
+                <img src="image/descarga.jfif" alt="">
+                <p>perfume</p>
+                <p>31990</p>
+                <button class="but">comprar</button>
+            </div>
+        </div>
+    </main>
+    <footer>@miEcommerce</footer>
+
+  </div>
 </body>
+<footer></footer>
 </html>
